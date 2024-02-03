@@ -78,14 +78,14 @@ namespace WpfApp2
                 MessageBox.Show("победа нулей");
                 b = true;
             }
-            if (buttons[0].Content == buttons[1].Content && buttons[0].Content != buttons[2].Content && buttons[0].Content == "0" && b == false ||
-                buttons[3].Content == buttons[4].Content && buttons[3].Content != buttons[5].Content && buttons[3].Content == "0" && b == false ||
-                buttons[6].Content == buttons[7].Content && buttons[6].Content != buttons[8].Content && buttons[6].Content == "0" && b == false ||
-                buttons[0].Content == buttons[3].Content && buttons[0].Content != buttons[6].Content && buttons[0].Content == "0" && b == false ||
-                buttons[1].Content == buttons[4].Content && buttons[1].Content != buttons[7].Content && buttons[1].Content == "0" && b == false ||
-                buttons[2].Content == buttons[5].Content && buttons[2].Content != buttons[8].Content && buttons[2].Content == "0" && b == false ||
-                buttons[0].Content == buttons[4].Content && buttons[0].Content != buttons[8].Content && buttons[0].Content == "0" && b == false ||
-                buttons[2].Content == buttons[4].Content && buttons[2].Content != buttons[6].Content && buttons[2].Content == "0" && b == false)
+            if (buttons[0].Content == buttons[1].Content && buttons[0].Content != buttons[2].Content && b == false ||
+                buttons[3].Content == buttons[4].Content && buttons[3].Content != buttons[5].Content && b == false ||
+                buttons[6].Content == buttons[7].Content && buttons[6].Content != buttons[8].Content && b == false ||
+                buttons[0].Content == buttons[3].Content && buttons[0].Content != buttons[6].Content && b == false ||
+                buttons[1].Content == buttons[4].Content && buttons[1].Content != buttons[7].Content && b == false ||
+                buttons[2].Content == buttons[5].Content && buttons[2].Content != buttons[8].Content && b == false ||
+                buttons[0].Content == buttons[4].Content && buttons[0].Content != buttons[8].Content && b == false ||
+                buttons[2].Content == buttons[4].Content && buttons[2].Content != buttons[6].Content && b == false)
             {
                 MessageBox.Show("ничья");
             }
@@ -97,9 +97,6 @@ namespace WpfApp2
 
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
+        
     }
 }
